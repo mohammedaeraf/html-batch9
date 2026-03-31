@@ -1,0 +1,11 @@
+.heading2 {
+  color: red;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.para {
+  color: blue;
+  text-align: justify;
+  font-family: "Courier New", Courier, monospace;
+}
+
