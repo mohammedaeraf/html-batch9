@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --main-bg-color: rgb(182, 247, 166);
+        --accent-color: rgb(168, 11, 11);
+        --main-text-color: rgb(143, 4, 127);
+        --padding-size: 2px;
+        --primary-font: "Saira Stencil";
+      }
+
+      body {
+        background-color: var(--main-bg-color);
+        color: var(--main-text-color);
+        padding: var(--padding-size);
+      }
+      h2 {
+        color: var(--accent-color);
+        font-family: var(--primary-font);
+      }
+      p {
+        color: var(--main-text-color);
+        font-family: var(--primary-font);
+      }
+      button {
+        background-color: var(--accent-color);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-family: var(--primary-font);
+      }
+      button:hover {
+        background-color: var(--main-text-color);
+        color: var(--main-bg-color);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Variables</h2>
+    <p>
+      This page uses CSS Variables for colors and spacing/padding. Change them
+      in the "root" element to see the effect everywhere
+    </p>
+    <button>Click Me</button>
+  </body>
+</html>
