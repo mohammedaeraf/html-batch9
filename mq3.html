@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query Demo</title>
+  <style>
+
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .section-a {
+      flex: 1;
+      background-color: lightblue;
+      padding: 40px;
+    }
+
+    .section-b {
+      flex: 1;
+      background-color: lightgreen;
+      padding: 40px;
+    }
+
+    /* On screens 600px or smaller, stack vertically */
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="section-a">Section A</div>
+    <div class="section-b">Section B</div>
+  </div>
+
+</body>
+</html>
