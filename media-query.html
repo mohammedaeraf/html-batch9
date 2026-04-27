@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        gap: 20px;
+      }
+      .section-a {
+        flex-grow: 1;
+        background-color: lightblue;
+        padding: 40px;
+        font-size: 36px;
+      }
+      .section-b {
+        flex-grow: 1;
+        background-color: lightgreen;
+        padding: 40px;
+        font-size: 36px;
+      }
+
+      /* mobile devices */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        .section-a,
+        .section-b {
+          font-size: 24px;
+          padding: 25px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section-a">Section A</div>
+      <div class="section-b">Section B</div>
+    </div>
+  </body>
+</html>
