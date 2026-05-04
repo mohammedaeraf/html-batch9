@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Introduction</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script>
+      function changePara() {
+        document.getElementById("para1").style.color = "red";
+        document.getElementById("para1").style.fontStyle = "italic";
+      }
+
+      function clearPara() {
+        document.getElementById("para1").style.color = "black";
+        document.getElementById("para1").style.fontStyle = "normal";
+      }
+
+      function hidePara() {
+        document.getElementById("para1").style.display = "none";
+      }
+
+      function showPara() {
+        document.getElementById("para1").style.display = "block";
+      }
+    </script>
+  </head>
+  <body>
+    <h2 class="text-center text-primary m-3">JavaScript Introduction</h2>
+    <p id="para1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut neque
+      doloremque tenetur iusto harum animi commodi officiis laudantium facilis,
+      dolorem optio distinctio impedit ullam! Veniam minus est sequi illum.
+      Event Handling
+    </p>
+    <button
+      onmouseover="changePara()"
+      onmouseout="clearPara()"
+      class="btn btn-primary me-3"
+    >
+      Change Para
+    </button>
+    <button onclick="hidePara()" class="btn btn-danger">Hide Para</button>
+    <button onclick="showPara()" class="btn btn-success ms-3">Show Para</button>
+  </body>
+</html>
