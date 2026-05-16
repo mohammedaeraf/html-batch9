@@ -11,8 +11,10 @@
       crossorigin="anonymous"
     />
     <style>
+      /* Hero section styles create a full-screen background hero area */
       .hero-section {
         min-height: 100vh;
+        /* layered background with semi-transparent overlay and image */
         background:
           linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
           url(img/hero-bg.avif);
@@ -25,9 +27,11 @@
     </style>
   </head>
   <body>
+    <!-- Main hero section using Bootstrap container and grid layout -->
     <section class="hero-section">
       <div class="container">
         <div class="row">
+          <!-- Use a column that spans 7 units on large screens -->
           <div class="col-lg-7">
             <h1 class="display-3 fw-bold">
               Grow Your Brand With Powerful Digital Solutions
@@ -37,11 +41,11 @@
               and Professional Video Editing.
             </p>
             <div class="mt-4">
+              <!-- Primary and secondary call-to-action buttons -->
               <button class="btn btn-primary btn-lg me-3">Our Services</button>
               <button class="btn btn-danger btn-lg">Get Started</button>
             </div>
           </div>
-          
         </div>
       </div>
     </section>
